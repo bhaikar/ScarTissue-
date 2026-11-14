@@ -4,23 +4,22 @@
 !.env.example
 
 # Python
+.env.local
+backend/.env
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
-
 # Local state
 *.db
 *.sqlite3
-
 # Node
 node_modules/
 dist/
-
 # Evaluation output
 eval/results/
-
 # OS/editor
 .DS_Store
 .vscode/
 .idea/
+_smoke_output.json

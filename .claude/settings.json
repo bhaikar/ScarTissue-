@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(pytest*)",
+      "Bash(python -m pytest*)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(git commit*)",
+      "Bash(pip install*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./backend/.env)",
+      "Edit(./.env)",
+      "Edit(./backend/.env)",
+      "Write(./.env)",
+      "Write(./backend/.env)",
+      "Bash(cat .env*)",
+      "Bash(cat backend/.env*)",
+      "Bash(printenv*)",
+      "Bash(git push --force*)",
+      "Bash(rm -rf*)"
+    ]
+  }
+}
