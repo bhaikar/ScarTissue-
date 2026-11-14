@@ -1,0 +1,29 @@
+[
+  {
+    "deployment_id": "deploy-901",
+    "service": "checkout",
+    "retry_attempts": 20,
+    "retry_budget": null,
+    "timeout_seconds": 5,
+    "connection_pool_size": 20,
+    "feature_flags": {"batch_retries": true}
+  },
+  {
+    "deployment_id": "deploy-safe-001",
+    "service": "checkout",
+    "retry_attempts": 3,
+    "retry_budget": 5,
+    "timeout_seconds": 5,
+    "connection_pool_size": 20,
+    "feature_flags": {"batch_retries": false}
+  },
+  {
+    "deployment_id": "deploy-search-015",
+    "service": "search",
+    "retry_attempts": 18,
+    "retry_budget": null,
+    "timeout_seconds": 5,
+    "connection_pool_size": 12,
+    "feature_flags": {"batch_retries": true}
+  }
+]
